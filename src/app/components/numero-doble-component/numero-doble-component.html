@@ -1,3 +1,11 @@
 <div>
-  <h1>Número doble</h1>
+  <h1>Doble Routing</h1>
+  <button (click)="goToHome()">Voler al inicio</button>
+  <button (click)="redirect(33)">Número 33</button>
+  <button (click)="redirect(14)">Número 14</button>
+  @if(numero) {
+  <h2 style="color: blue">El doble de {{ numero }} es {{ doble }}</h2>
+  }@else {
+  <h2 style="color: red">No hemos recibido parámetro</h2>
+  }
 </div>

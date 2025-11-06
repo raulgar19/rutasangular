@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    @if(numeros.length > 0) { @for (num of numeros; track num) {
+    <li>
+      <a [routerLink]="['/tablamultiplicar', num]">Tabla del {{ num }}</a>
+    </li>
+    } }
+  </ul>
+</div>

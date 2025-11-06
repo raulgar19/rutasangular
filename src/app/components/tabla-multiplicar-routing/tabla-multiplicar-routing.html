@@ -1,0 +1,21 @@
+<div>
+  <h1>Tabla Multiplicar Routing</h1>
+  @if (numero) {
+  <table>
+    <thead>
+      <tr>
+        <th>Operación</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (num of resultados; track num; let i = $index) {
+      <tr>
+        <td>{{ numero }} * {{ i + 1 }}</td>
+        <td>{{ num }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+</div>
